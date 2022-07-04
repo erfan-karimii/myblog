@@ -30,7 +30,6 @@ class Category(models.Model):
         return self.name
 
 
-
 class Comment(models.Model):
     blog = models.ForeignKey(Blog,on_delete=models.CASCADE,related_name='comments')
     Full_name = models.CharField(max_length=200)
